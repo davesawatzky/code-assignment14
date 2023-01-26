@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react'
+import { Fragment } from 'react'
 import styled from 'styled-components'
 import { RadioProps } from './Radio.types'
 
@@ -40,7 +40,7 @@ const StyledErrorMessage = styled.p<RadioProps>`
   margin-top: 5px;
 `
 
-const Radio: FC<RadioProps> = ({
+function Radio({
   id,
   title,
   radioGroupName,
@@ -49,7 +49,7 @@ const Radio: FC<RadioProps> = ({
   disabled,
   options,
   ...props
-}) => {
+}: RadioProps) {
   return (
     <Fragment>
       <StyledFieldSet id={id} disabled={disabled} error={error}>

@@ -26,7 +26,7 @@ const TableBody: FC<TableProps> = ({ error, disabled, tableColor, children }) =>
   )
 }
 
-const Table: FC<TableProps> = ({
+function Table({
   headerColor,
   footerColor,
   tableHeaderData,
@@ -34,7 +34,7 @@ const Table: FC<TableProps> = ({
   tableData,
   error,
   disabled
-}) => {
+}: TableProps) {
   return (
     <StyledTable error={error} disabled={disabled}>
       <TableHeader headings={tableHeaderData} headerColor={headerColor}></TableHeader>

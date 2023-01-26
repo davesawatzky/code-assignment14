@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import styled from 'styled-components'
 import { ImageProps } from './Image.types'
 
@@ -7,7 +6,7 @@ const StyledImage = styled.img<ImageProps>`
   filter: ${(props) => (props.disabled ? 'grayscale(100%)' : '')};
 `
 
-const Image: FC<ImageProps> = ({ source, id, error, disabled, width, height, ...props }) => {
+function Image({ source, id, error, disabled, width, height, ...props }: ImageProps) {
   return (
     <StyledImage
       src={source}

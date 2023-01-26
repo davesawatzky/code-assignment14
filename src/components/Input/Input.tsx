@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react'
+import { Fragment } from 'react'
 import styled from 'styled-components'
 import { InputProps } from './Input.types'
 
@@ -32,7 +32,7 @@ const StyledText = styled.p<InputProps>`
   color: ${(props) => (props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808')};
 `
 
-const Input: FC<InputProps> = ({
+function Input({
   id,
   name,
   disabled,
@@ -43,7 +43,7 @@ const Input: FC<InputProps> = ({
   onChange,
   placeholder,
   ...props
-}) => {
+}: InputProps) {
   return (
     <Fragment>
       <StyledLabel>

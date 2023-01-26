@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import styled from 'styled-components'
 import { ButtonProps } from './Button.types'
 
@@ -33,15 +32,7 @@ const StyledButton = styled.button<ButtonProps>`
   }
 `
 
-const Button: FC<ButtonProps> = ({
-  size,
-  primary,
-  disabled,
-  children,
-  buttonText,
-  onClick,
-  ...props
-}) => {
+function Button({ size, primary, disabled, children, buttonText, onClick, ...props }: ButtonProps) {
   return (
     <StyledButton
       type='button'

@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import styled from 'styled-components'
 import { HeroProps } from './Hero.types'
 import Button from '../Button'
@@ -37,7 +36,7 @@ const StyledH2 = styled.h2<HeroProps>`
   color: ${(props) => (props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808')};
 `
 
-const Hero: FC<HeroProps> = ({
+function Hero({
   id,
   image,
   imageSize,
@@ -52,7 +51,7 @@ const Hero: FC<HeroProps> = ({
   disabled,
   onClick,
   ...props
-}) => {
+}: HeroProps) {
   return (
     <StyledHero
       image={image}

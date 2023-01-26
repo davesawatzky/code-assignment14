@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import styled from 'styled-components'
 import { TextProps } from './Text.types'
 
@@ -7,7 +6,7 @@ const StyledText = styled.p<TextProps>`
   font-weight: ${(props) => (props.error ? '700' : '400')};
 `
 
-const Text: FC<TextProps> = ({ text, children, id, error, disabled, ...props }) => {
+function Text({ text, children, id, error, disabled, ...props }: TextProps) {
   return (
     <StyledText id={id} disabled={disabled} error={error} {...props}>
       {text ? text : children}

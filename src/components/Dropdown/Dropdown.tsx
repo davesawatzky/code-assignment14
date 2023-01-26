@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react'
+import { Fragment } from 'react'
 import styled from 'styled-components'
 import { DropdownProps } from './Dropdown.types'
 
@@ -37,7 +37,7 @@ const StyledText = styled.p<DropdownProps>`
 
 const StyledOptions = styled.option<DropdownProps>``
 
-const Dropdown: FC<DropdownProps> = ({
+function Dropdown({
   id,
   label,
   error,
@@ -49,7 +49,7 @@ const Dropdown: FC<DropdownProps> = ({
   placeholder,
   options,
   ...props
-}) => {
+}: DropdownProps) {
   return (
     <Fragment>
       <StyledLabel>

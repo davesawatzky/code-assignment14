@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import styled from 'styled-components'
 import { CardProps } from './Card.types'
 
@@ -26,7 +25,7 @@ const StyledText = styled.p<CardProps>`
   font-weight: ${(props) => (props.error ? '700' : '400')};
 `
 
-const Card: FC<CardProps> = ({
+function Card({
   cardText,
   cardHeadingText,
   cardSubText,
@@ -34,7 +33,7 @@ const Card: FC<CardProps> = ({
   error,
   disabled,
   ...props
-}) => {
+}: CardProps) {
   return (
     <StyledCard id={id} disabled={disabled} error={error} {...props}>
       <StyledH1 error={error} disabled={disabled}>

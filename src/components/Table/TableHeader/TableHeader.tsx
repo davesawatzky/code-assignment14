@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import styled from 'styled-components'
 import { TableHeaderProps } from './TableHeader.types'
 
@@ -14,7 +13,7 @@ const StyledTableHeaderCell = styled.th<TableHeaderProps>`
   border: 1px solid black;
 `
 
-const TableHeader: FC<TableHeaderProps> = ({ headings, disabled, error, headerColor }) => {
+function TableHeader({ headings, disabled, error, headerColor }: TableHeaderProps) {
   return (
     <StyledTableHeader
       role={'rowgroup'}

@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import styled from 'styled-components'
 import { TableFooterProps } from './TableFooter.types'
 
@@ -14,7 +13,7 @@ const StyledTableFooterCell = styled.th<TableFooterProps>`
   border: 1px solid black;
 `
 
-const TableFooter: FC<TableFooterProps> = ({ footer, disabled, error, footerColor }) => {
+function TableFooter({ footer, disabled, error, footerColor }: TableFooterProps) {
   return (
     <StyledTableFooter
       role={'rowgroup'}

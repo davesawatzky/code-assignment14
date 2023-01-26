@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import styled from 'styled-components'
 import { LabelProps } from './Label.types'
 
@@ -7,7 +6,7 @@ const StyledLabel = styled.label<LabelProps>`
   font-weight: ${(props) => (props.error ? '700' : '400')};
 `
 
-const Label: FC<LabelProps> = ({ id, text, error, disabled, ...props }) => {
+function Label({ id, text, error, disabled, ...props }: LabelProps) {
   return (
     <StyledLabel id={id} disabled={disabled} error={error} {...props}>
       {text}

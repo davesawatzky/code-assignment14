@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import styled from 'styled-components'
 import { TableCellProps } from './TableCell.types'
 
@@ -7,7 +6,7 @@ const StyledTableCell = styled.td<TableCellProps>`
   background-color: ${(props) => (props.disabled ? '#cecdcd' : props.error ? '#ff5b4f' : '#fff')};
 `
 
-const TableCell: FC<TableCellProps> = ({ children, disabled, error }) => {
+function TableCell({ children, disabled, error }: TableCellProps) {
   return (
     <StyledTableCell error={error} disabled={disabled}>
       {children}
