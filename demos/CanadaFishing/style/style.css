@@ -1,0 +1,53 @@
+root: {
+	--bs-link-hover-color: #a3f2f5;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	/* background-color: #a3f2f5 */
+	background-image: url('../images/fisherman.webp');
+	background-size: cover;
+	background-position: top;
+	height: 100%;
+}
+
+header {
+	background-color: #075e61;
+	color: #fff;
+}
+
+footer {
+	position: absolute;
+	background-color: #043638;
+	color: #fff;
+	bottom: 0;
+}
+
+.main {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	background-color: #fff;
+	padding: 25px;
+	border-radius: 20px;
+	min-height: 100%;
+}
+
+.pagetitle {
+	/* text-align: left; */
+}
+
+.image {
+	max-width: 600px;
+	margin: auto;
+}
+
+.comment {
+	padding: 10px;
+	border: 1px solid #d4d4d4;
+	border-radius: 7px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
