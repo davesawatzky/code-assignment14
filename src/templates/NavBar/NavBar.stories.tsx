@@ -16,7 +16,10 @@ Primary.args = {
   error: false,
   disabled: false,
   items: [
-    { name: 'Menu1', link: '#menu1' },
-    { name: 'Menu2', link: '#menu2' }
+    { name: 'About', link: '#menu1' },
+    { name: 'Work', link: '#menu2' },
+    { name: 'Skills', link: '#menu3' },
+    { name: 'Resources', link: '#menu4' },
+    { name: 'Tools', link: '#menu5' }
   ]
 }

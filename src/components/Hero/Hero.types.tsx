@@ -10,8 +10,9 @@ export interface HeroProps {
   headingText?: string
   subText?: string
   buttonText?: string
-  heroHeight?: (number & 'em') | (number & 'px') | (number & '%') | 'vh'
-  imageSize?: 'cover' | 'auto' | 'contain' | (number & 'em') | (number & 'px') | (number & '%')
+  heroHeight?: string
+  // heroHeight?: (number & 'em') | (number & 'px') | (number & '%') | (number & 'vh')
+  imageSize?: 'cover' | 'auto' | 'contain' | string
   imagePosition?: 'left' | 'center' | 'right'
   textBlockPosition?: 'left' | 'right'
   onClick?: MouseEventHandler<HTMLButtonElement>
