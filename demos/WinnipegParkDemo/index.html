@@ -1,0 +1,67 @@
+<!-- 
+	  Assignment 4 - AJAX with Open Data
+    Name: David Sawatzky
+    Course: WEBD-2008 Web Development 2
+    Date: June 25, 2022
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+    <title>Winnipeg Parks</title>
+  </head>
+  <body>
+    <h1>Winnipeg Parks and Open Spaces Directory</h1>
+    <form id="searchform">
+      <h2>Choose one of the following three filters.</h2>
+      <div id="cca" class="filter">
+        <label for="cca-radio">CCA</label>
+        <input
+          type="radio"
+          name="filter-option"
+          id="cca-radio"
+          value="cca"
+          checked
+        />
+        <select id="cca-select" name="cca">
+          <!-- <option value=""></option> -->
+        </select>
+      </div>
+      <div id="district" class="filter">
+        <label for="district-radio">District</label>
+        <input
+          type="radio"
+          name="filter-option"
+          id="district-radio"
+          value="district"
+        />
+        <select id="district-select" name="district">
+          <!-- <option value=""></option> -->
+        </select>
+      </div>
+      <div id="neighbourhood" class="filter">
+        <label for="neighbourhood-radio">Neighbourhood</label>
+        <input
+          type="radio"
+          name="filter-option"
+          id="neighbourhood-radio"
+          value="neighbourhood"
+        />
+        <select id="neighbourhood-select" name="neighbourhood">
+          <!-- <option value=""></option> -->
+        </select>
+      </div>
+      <button id="search-button" type="button">Search</button>
+    </form>
+    <i id="recordcount"></i>
+    <table>
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>

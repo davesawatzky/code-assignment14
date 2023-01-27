@@ -1,6 +1,6 @@
-import { ReactNode } from 'react'
+import { ReactNode } from 'react';
 export interface TableRowProps {
-  children: ReactNode
-  disabled?: boolean
-  error?: boolean
+    children: ReactNode;
+    disabled?: boolean;
+    error?: boolean;
 }

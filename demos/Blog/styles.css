@@ -1,0 +1,86 @@
+/* Assignment 2 - Blog
+Name: David Sawatzky
+Course: WEBD-2008 Web Development 2
+Date: June 16, 2022 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  color: #fff;
+  font-weight: 600;
+  background-color: #f38c0e;
+  border: 0px solid;
+  border-radius: 5px;
+  padding: 7px 15px;
+}
+
+button:hover {
+  background-color: #fdb255;
+}
+
+button:active {
+  background-color: #cc760e;
+}
+
+input[type='text'] {
+  width: 100%;
+  max-width: 200px;
+}
+
+input[type='text'],
+textarea {
+  margin: 10px 0px;
+  padding: 5px;
+  border: 2px solid #c1c1c1;
+  border-radius: 7px;
+}
+
+textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  resize: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #c1c1c1;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.postcard {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  border: 2px solid #c1c1c1;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.postheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.edit {
+  margin-right: 20px;
+  text-align: end;
+}
+
+.date {
+  margin-top: 0px;
+}

@@ -1,4 +1,4 @@
-import { FC } from 'react'
-import { TableHeaderProps } from './TableHeader.types'
-declare const TableHeader: FC<TableHeaderProps>
-export default TableHeader
+/// <reference types="react" />
+import { TableHeaderProps } from './TableHeader.types';
+declare function TableHeader({ headings, disabled, error, tableHeaderColor }: TableHeaderProps): JSX.Element;
+export default TableHeader;

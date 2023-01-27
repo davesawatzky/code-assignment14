@@ -1,0 +1,83 @@
+/* 
+ * Assignment 4 - AJAX with Open Data
+ * Name: David Sawatzky
+ * Course: WEBD-2008 Web Development 2
+ * Date: June 25, 2022
+ */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 95%;
+  max-width: 1024px;
+  margin: 0px auto;
+}
+
+button {
+  margin-left: 160px;
+  margin-bottom: 30px;
+  padding: 7px 20px;
+  background-image: linear-gradient(
+    to right,
+    #02aab0 0%,
+    #00cdac 50%,
+    #02aab0 100%
+  );
+  background-size: 200% auto;
+  border: 0px;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-position: right center;
+}
+
+button:active {
+  background-image: linear-gradient(to left, #026e72 0%, #01ac8f 100%);
+}
+
+select {
+  padding: 5px 10px;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+}
+
+#cca {
+  margin-left: 100px;
+}
+
+#district {
+  margin-left: 80px;
+}
+
+#neighbourhood {
+  margin-left: 16px;
+}
+
+.filter {
+  margin: 10px 0px;
+}
+
+table {
+  margin-bottom: 50px;
+  width: 100%;
+  font-size: 0.8rem;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #026e72;
+  color: #fff;
+}
+th {
+  padding: 5px 10px;
+}
+
+td {
+  padding: 6px 15px;
+}
+
+tr {
+  border-bottom: 1px solid #c1c1c1;
+}

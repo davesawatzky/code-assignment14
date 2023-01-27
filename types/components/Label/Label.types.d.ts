@@ -1,6 +1,6 @@
 export interface LabelProps {
-  id?: string
-  text?: string
-  error?: boolean
-  disabled?: boolean
+    id?: string;
+    text?: string;
+    error?: boolean;
+    disabled?: boolean;
 }

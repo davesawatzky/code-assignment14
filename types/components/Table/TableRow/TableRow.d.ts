@@ -1,4 +1,4 @@
-import { FC } from 'react'
-import { TableRowProps } from './TableRow.types'
-declare const TableRow: FC<TableRowProps>
-export default TableRow
+/// <reference types="react" />
+import { TableRowProps } from './TableRow.types';
+declare function TableRow({ children, error, disabled }: TableRowProps): JSX.Element;
+export default TableRow;

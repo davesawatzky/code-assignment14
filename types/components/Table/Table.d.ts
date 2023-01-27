@@ -1,4 +1,4 @@
-import { FC } from 'react'
-import { TableProps } from './Table.types'
-declare const Table: FC<TableProps>
-export default Table
+/// <reference types="react" />
+import { TableProps } from './Table.types';
+declare function Table({ tableHeaderColor, tableFooterColor, tableHeaderData, tableFooterData, tableColor, tableData, error, disabled }: TableProps): JSX.Element;
+export default Table;

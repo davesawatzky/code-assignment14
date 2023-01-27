@@ -1,4 +1,4 @@
-import { FC } from 'react'
-import { TextProps } from './Text.types'
-declare const Text: FC<TextProps>
-export default Text
+/// <reference types="react" />
+import { TextProps } from './Text.types';
+declare function Text({ text, children, id, error, disabled, ...props }: TextProps): JSX.Element;
+export default Text;

@@ -1,9 +1,9 @@
 export interface TableFooterProps {
-  footer?: {
-    name: string
-    columnSpan: number
-  }[]
-  disabled?: boolean
-  error?: boolean
-  footerColor?: string
+    footer?: {
+        name: string;
+        columnSpan: number;
+    }[];
+    disabled?: boolean;
+    error?: boolean;
+    tableFooterColor?: string;
 }

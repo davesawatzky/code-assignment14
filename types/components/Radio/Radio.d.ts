@@ -1,4 +1,4 @@
-import { FC } from 'react'
-import { RadioProps } from './Radio.types'
-declare const Radio: FC<RadioProps>
-export default Radio
+/// <reference types="react" />
+import { RadioProps } from './Radio.types';
+declare function Radio({ id, title, radioGroupName, error, errorMessage, disabled, options, ...props }: RadioProps): JSX.Element;
+export default Radio;

@@ -21,6 +21,6 @@
     "jsx": "react-jsx"
   },
   "exclude": ["dist", "node_modules", "src/**/*.test.tsx", "src/**/*.stories.tsx"],
-  "include": ["src", "mocks"],
+  "include": ["src", "mocks", "dist/WinnipegParkDemo"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

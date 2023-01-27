@@ -1,4 +1,4 @@
-import { FC } from 'react'
-import { LabelProps } from './Label.types'
-declare const Label: FC<LabelProps>
-export default Label
+/// <reference types="react" />
+import { LabelProps } from './Label.types';
+declare function Label({ id, text, error, disabled, ...props }: LabelProps): JSX.Element;
+export default Label;
