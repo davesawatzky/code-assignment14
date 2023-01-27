@@ -36,22 +36,22 @@ export const Primary = Template.bind({})
 Primary.args = {
   error: false,
   disabled: false,
-  headerColor: '#6faeff',
-  footerColor: '#30e1ee'
+  tableHeaderColor: '#6faeff',
+  tableFooterColor: '#30e1ee'
 }
 
 export const Error = Template.bind({})
 Error.args = {
   error: true,
   disabled: false,
-  headerColor: '#6faeff',
-  footerColor: '#30e1ee'
+  tableHeaderColor: '#6faeff',
+  tableFooterColor: '#30e1ee'
 }
 
 export const Disabled = Template.bind({})
 Disabled.args = {
   error: false,
   disabled: true,
-  headerColor: '#6faeff',
-  footerColor: '#30e1ee'
+  tableHeaderColor: '#6faeff',
+  tableFooterColor: '#30e1ee'
 }

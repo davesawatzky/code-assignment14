@@ -1,0 +1,26 @@
+.accordion {
+  max-width: 768px;
+}
+.accordion-item {
+  list-style: none;
+  border: 1px solid #c1c1c1;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.accordion-toggle {
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+.accordion-toggle:hover {
+  background-color: #494949;
+}
+.accordion-toggle h3 {
+  margin: 0;
+}
+.accordion-content {
+  padding: 1em;
+}

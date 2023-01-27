@@ -5,5 +5,5 @@ export interface TableHeaderProps {
   }[]
   disabled?: boolean
   error?: boolean
-  headerColor?: string
+  tableHeaderColor?: string
 }

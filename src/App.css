@@ -21,13 +21,33 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
 .container {
   margin-top: 80px;
   padding: 0px;
   background-color: #363636;
-}
-
-.heading {
 }
 
 .section {

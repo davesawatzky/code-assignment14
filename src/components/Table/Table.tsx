@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import styled from 'styled-components'
 import { TableProps } from './Table.types'
 import TableRow from './TableRow'
@@ -7,18 +6,16 @@ import TableHeader from './TableHeader'
 import TableFooter from './TableFooter'
 
 const StyledTable = styled.table<TableProps>`
-  border-collapse: collapse;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: ${(props) => props.tableColor};
+  border: 1px solid #c1c1c1;
+  border-radius: 15px;
+  background-color: #424242;
 `
 
 const StyledTableBody = styled.tbody<TableProps>`
-  border: 1px solid black;
-  background-color: ${(props) => (props.disabled ? '#cecdcd' : props.error ? '#ff5b4f' : '#fff')};
+  background-color: ${(props) =>
+    props.disabled ? '#cecdcd' : props.error ? '#ff5b4f' : props.tableColor};
 `
-const TableBody: FC<TableProps> = ({ error, disabled, tableColor, children }) => {
+function TableBody({ error, disabled, tableColor, children }: TableProps) {
   return (
     <StyledTableBody error={error} disabled={disabled} tableColor={tableColor}>
       {children}
@@ -27,18 +24,19 @@ const TableBody: FC<TableProps> = ({ error, disabled, tableColor, children }) =>
 }
 
 function Table({
-  headerColor,
-  footerColor,
+  tableHeaderColor,
+  tableFooterColor,
   tableHeaderData,
   tableFooterData,
+  tableColor,
   tableData,
   error,
   disabled
 }: TableProps) {
   return (
     <StyledTable error={error} disabled={disabled}>
-      <TableHeader headings={tableHeaderData} headerColor={headerColor}></TableHeader>
-      <TableBody error={error} disabled={disabled}>
+      <TableHeader headings={tableHeaderData} tableHeaderColor={tableHeaderColor}></TableHeader>
+      <TableBody error={error} disabled={disabled} tableColor={tableColor}>
         {tableData?.map((rowData, i) => (
           <TableRow key={i} disabled={disabled} error={error}>
             {rowData.map((cellData, j) => (
@@ -49,7 +47,7 @@ function Table({
           </TableRow>
         ))}
       </TableBody>
-      <TableFooter footer={tableFooterData} footerColor={footerColor}></TableFooter>
+      <TableFooter footer={tableFooterData} tableFooterColor={tableFooterColor}></TableFooter>
     </StyledTable>
   )
 }

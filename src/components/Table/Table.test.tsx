@@ -21,8 +21,8 @@ describe('Running Test for the Table', () => {
           { name: 'Two and Three', columnSpan: 2 },
           { name: 'Four', columnSpan: 4 }
         ]}
-        headerColor={'#6faeff'}
-        footerColor={'#30e1ee'}
+        tableHeaderColor={'#6faeff'}
+        tableFooterColor={'#30e1ee'}
       ></Table>
     )
     expect(screen.getByRole('table')).toBeVisible()
@@ -46,8 +46,8 @@ describe('Running Test for the Table', () => {
           { name: 'Two and Three', columnSpan: 2 },
           { name: 'Four', columnSpan: 4 }
         ]}
-        headerColor={'#6faeff'}
-        footerColor={'#30e1ee'}
+        tableHeaderColor={'#6faeff'}
+        tableFooterColor={'#30e1ee'}
       ></Table>
     )
     expect(screen.getByRole('cell', { name: 'three' })).toHaveStyle('background-color : #cecdcd')
@@ -71,8 +71,8 @@ describe('Running Test for the Table', () => {
           { name: 'Two and Three', columnSpan: 2 },
           { name: 'Four', columnSpan: 4 }
         ]}
-        headerColor={'#6faeff'}
-        footerColor={'#30e1ee'}
+        tableHeaderColor={'#6faeff'}
+        tableFooterColor={'#30e1ee'}
       ></Table>
     )
     expect(screen.getByRole('cell', { name: 'three' })).toHaveStyle('background-color : #ff5b4f')

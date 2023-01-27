@@ -13,7 +13,7 @@ describe('Running Test for Table Footer', () => {
             { name: 'Two and Three', columnSpan: 2 },
             { name: 'Four', columnSpan: 4 }
           ]}
-          footerColor={'blue'}
+          tableFooterColor={'blue'}
         ></TableFooter>
       </table>
     )
@@ -30,7 +30,7 @@ describe('Running Test for Table Footer', () => {
             { name: 'Two and Three', columnSpan: 2 },
             { name: 'Four', columnSpan: 4 }
           ]}
-          footerColor={'blue'}
+          tableFooterColor={'blue'}
         ></TableFooter>
       </table>
     )
@@ -47,7 +47,7 @@ describe('Running Test for Table Footer', () => {
             { name: 'Two and Three', columnSpan: 2 },
             { name: 'Four', columnSpan: 4 }
           ]}
-          footerColor={'blue'}
+          tableFooterColor={'blue'}
         ></TableFooter>
       </table>
     )

@@ -5,5 +5,5 @@ export interface TableFooterProps {
   }[]
   disabled?: boolean
   error?: boolean
-  footerColor?: string
+  tableFooterColor?: string
 }

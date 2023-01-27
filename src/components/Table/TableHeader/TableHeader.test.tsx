@@ -13,7 +13,7 @@ describe('Running Test for Table Header', () => {
             { name: 'Two and Three', columnSpan: 2 },
             { name: 'Four', columnSpan: 4 }
           ]}
-          headerColor={'blue'}
+          tableHeaderColor={'blue'}
         ></TableHeader>
       </table>
     )
@@ -30,7 +30,7 @@ describe('Running Test for Table Header', () => {
             { name: 'Two and Three', columnSpan: 2 },
             { name: 'Four', columnSpan: 4 }
           ]}
-          headerColor={'blue'}
+          tableHeaderColor={'blue'}
         ></TableHeader>
       </table>
     )
@@ -47,7 +47,7 @@ describe('Running Test for Table Header', () => {
             { name: 'Two and Three', columnSpan: 2 },
             { name: 'Four', columnSpan: 4 }
           ]}
-          headerColor={'blue'}
+          tableHeaderColor={'blue'}
         ></TableHeader>
       </table>
     )

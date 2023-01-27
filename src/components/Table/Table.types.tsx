@@ -10,8 +10,8 @@ export interface TableProps {
     name: string
     columnSpan: number
   }[]
-  footerColor?: string
-  headerColor?: string
+  tableFooterColor?: string
+  tableHeaderColor?: string
   tableColor?: string
   error?: boolean
   disabled?: boolean

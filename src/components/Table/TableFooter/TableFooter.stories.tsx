@@ -20,7 +20,7 @@ Primary.args = {
     { name: 'Footer 2 & 3', columnSpan: 2 },
     { name: 'Footer 4', columnSpan: 1 }
   ],
-  footerColor: '#30e1ee'
+  tableFooterColor: '#30e1ee'
 }
 
 export const Error = Template.bind({})
@@ -32,7 +32,7 @@ Error.args = {
     { name: 'Footer 2 & 3', columnSpan: 2 },
     { name: 'Footer 4', columnSpan: 1 }
   ],
-  footerColor: '#ff5b4f'
+  tableFooterColor: '#ff5b4f'
 }
 
 export const Disabled = Template.bind({})
@@ -44,5 +44,5 @@ Disabled.args = {
     { name: 'Footer 2 & 3', columnSpan: 2 },
     { name: 'Footer 4', columnSpan: 1 }
   ],
-  footerColor: '#cecdcd'
+  tableFooterColor: '#cecdcd'
 }
