@@ -12,4 +12,4 @@ COPY package-lock.json ./
 COPY . .
 RUN npm install
 CMD ["npm", "run", "dev"]
-EXPOSE 5173
+EXPOSE 8000
