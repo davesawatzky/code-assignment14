@@ -5,7 +5,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 ENV NODE_OPTIONS="--openssl-legacy-provider"
 
-WORKDIR /sawatzky_david_ui_garden_build_checks
+WORKDIR /sawatzky_david_final_site
 
 COPY package.json ./
 COPY package-lock.json ./
