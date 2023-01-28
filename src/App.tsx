@@ -42,38 +42,32 @@ function App() {
           </h2>
           <div className='cards'>
             <div className='card section'>
-              <a href='demos/Blog/index.php' target='_blank'>
-                <Image source='src/assets/Blog.png' width='100%' />
-                <h2>Blog Application</h2>
-                <h4>Built with: PHP, HTML, CSS, MySQL</h4>
-                <p>
-                  Simple demo blog application using PHP and MySQL. It&apos;s able to add, edit, and
-                  remove posts.
-                </p>
-              </a>
+              <Image source='src/assets/Blog.png' width='100%' />
+              <h2>Blog Application</h2>
+              <h4>Built with: PHP, HTML, CSS, MySQL</h4>
+              <p>
+                Simple demo blog application using PHP and MySQL. It&apos;s able to add, edit, and
+                remove posts.
+              </p>
             </div>
 
             <div className='card section'>
-              <a href='demos/WinnipegParkDemo/park.html' target='_blank'>
-                <Image source='src/assets/WinnipegParkDemo.png' width='100%' />
-                <h2>Winnipeg Park Demo</h2>
-                <h4>Built with: HTML, CSS, JavaScript, RestAPI</h4>
-                <p>
-                  Neat little site that uses Winnipeg public apis to look up all the different parks
-                  within Winnipeg and their location.
-                </p>
-              </a>
+              <Image source='src/assets/WinnipegParkDemo.png' width='100%' />
+              <h2>Winnipeg Park Demo</h2>
+              <h4>Built with: HTML, CSS, JavaScript, RestAPI</h4>
+              <p>
+                Neat little site that uses Winnipeg public apis to look up all the different parks
+                within Winnipeg and their location.
+              </p>
             </div>
             <div className='card section'>
-              <a href='demos/CanadaFishing/index.php' target='_blank'>
-                <Image source='src/assets/CanadaFishing.png' width='100%' />
-                <h2>Canada Fishing Demo</h2>
-                <h4>Built with: PHP, HTML, CSS, JavaScript, MySQL, TinyMCE, RestAPI</h4>
-                <p>
-                  Simple application fetching data on many of Canada&apos;s native fresh water fish
-                  species.
-                </p>
-              </a>
+              <Image source='src/assets/CanadaFishing.png' width='100%' />
+              <h2>Canada Fishing Demo</h2>
+              <h4>Built with: PHP, HTML, CSS, JavaScript, MySQL, TinyMCE, RestAPI</h4>
+              <p>
+                Simple application fetching data on many of Canada&apos;s native fresh water fish
+                species.
+              </p>
             </div>
 
             <div className='card section'>
