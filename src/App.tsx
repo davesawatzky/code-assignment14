@@ -17,7 +17,7 @@ function App() {
       <div className='container'>
         <Hero
           image={'src/assets/field.jpg'}
-          imageSize={'50%'}
+          imageSize={'cover'}
           imagePosition={'left'}
           heroHeight={'50vh'}
           textBlockPosition={'right'}
@@ -89,6 +89,7 @@ function App() {
           <h2 id='skills' className='heading'>
             Skills
           </h2>
+
           <Accordion
             accordionData={[
               {
@@ -115,11 +116,6 @@ function App() {
               }
             ]}
           />
-        </section>
-        <section className='section resources'>
-          <h2 id='resources' className='heading'>
-            Resources
-          </h2>
         </section>
         <section id='setup' className='section setup'>
           <h2 className='heading'>Developer Setup</h2>

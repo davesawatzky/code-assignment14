@@ -29,11 +29,11 @@ const StyledTextBlock = styled.div<HeroProps>`
   justify-items: center;
 `
 const StyledH1 = styled.h1<HeroProps>`
-  color: ${(props) => (props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#b9b9b9')};
+  color: ${(props) => (props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#ffffff')};
 `
 
 const StyledH2 = styled.h2<HeroProps>`
-  color: ${(props) => (props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#b9b9b9')};
+  color: ${(props) => (props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#ffffff')};
 `
 
 function Hero({

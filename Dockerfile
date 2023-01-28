@@ -11,5 +11,5 @@ COPY package.json ./
 COPY package-lock.json ./
 COPY . .
 RUN npm install
-CMD ["npm", "run", "storybook"]
-EXPOSE 6006
+CMD ["npm", "run", "dev"]
+EXPOSE 5173

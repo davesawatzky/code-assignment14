@@ -30,10 +30,12 @@ h4 {
 
 h1 {
   font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
 h2 {
   font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 h3 {
@@ -44,10 +46,23 @@ h4 {
   font-size: 1.2rem;
 }
 
+table {
+  margin: auto;
+}
+
+ul {
+  margin: auto;
+  padding-inline-start: 0px;
+}
+
 .container {
   margin-top: 80px;
   padding: 0px;
   background-color: #363636;
+}
+
+.heading {
+  text-align: center;
 }
 
 .section {
@@ -60,9 +75,18 @@ h4 {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
 }
 
 .card {
   width: 40%;
+  flex-grow: 1;
+}
+
+.about p {
+  margin: auto;
+  max-width: 768px;
+}
+
+.contact {
+  text-align: center;
 }
