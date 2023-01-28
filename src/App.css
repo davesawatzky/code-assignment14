@@ -56,3 +56,13 @@ h4 {
   border: 1px solid #c1c1c1;
   border-radius: 15px;
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.card {
+  width: 40%;
+}

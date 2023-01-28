@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { HeroProps } from './Hero.types'
-import Button from '../Button'
 import blankImage from '../../assets/placeholder.jpg'
 
 const StyledHero = styled.div<HeroProps>`
@@ -46,11 +45,8 @@ function Hero({
   headingText,
   subText,
   heroHeight,
-  buttonText,
-  primary,
   error,
   disabled,
-  onClick,
   ...props
 }: HeroProps) {
   return (
@@ -71,9 +67,6 @@ function Hero({
         <StyledH2 error={error} disabled={disabled}>
           {subText}
         </StyledH2>
-        <Button onClick={onClick} primary={primary} disabled={disabled}>
-          {buttonText}
-        </Button>
       </StyledTextBlock>
       <div></div>
     </StyledHero>
